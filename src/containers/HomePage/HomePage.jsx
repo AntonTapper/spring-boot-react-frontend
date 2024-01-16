@@ -1,8 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './HomePage.css'
 
 const HomePage = () => {
-  return (
+
+  const [searchQuery, setSearchQuery] = useState([])
+
+  //FIXA HÄMTNING AV HOTEL
+  const handleSearch = (query) => {
+    setSearchQuery(query);
+    
+  }
+
+  return (<>
+    <div>
+      {/* Hero Section */}
+      <div className='hero-section'>
+        <h1>Your Perfect Stay Awaits</h1>
+        {/* SearchBar */}
+      </div>
+    </div>
+      
     <div className='home-page'>
         {/* <HotelSlider/> */}
         <section className='welcome-section'>
@@ -10,7 +27,7 @@ const HomePage = () => {
             <p>Discover hotels all around the world!</p>
         </section>
     </div>
-  )
+    </>)
 }
 
 export default HomePage
