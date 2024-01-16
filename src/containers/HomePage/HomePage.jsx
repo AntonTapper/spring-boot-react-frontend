@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './HomePage.css'
+import SearchBar from '../../components/SearchBar/SearchBar'
 
 const HomePage = () => {
 
@@ -16,7 +17,7 @@ const HomePage = () => {
       {/* Hero Section */}
       <div className='hero-section'>
         <h1>Your Perfect Stay Awaits</h1>
-        {/* SearchBar */}
+        <SearchBar onSearch={handleSearch}/>
       </div>
     </div>
       
