@@ -5,6 +5,6 @@ import HomePage from '@/containers/HomePage/HomePage'
 import CarouselPage from '@/components/CarouselPage'
 
 export default function Home() {
-  return CarouselPage()
+  return HomePage()
     
 }
