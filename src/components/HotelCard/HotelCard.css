@@ -1,0 +1,25 @@
+.hotel-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.hotel-details {
+    padding: 15px;
+}
+
+.hotel-name {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+.hotel-description {
+    color: #555;
+}

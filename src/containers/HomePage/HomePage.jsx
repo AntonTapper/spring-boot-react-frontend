@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import './HomePage.css'
 import SearchBar from '../../components/SearchBar/SearchBar'
+import HeroSection from '@/components/HeroSection/HeroSection'
+import HotelCard from '@/components/HotelCard/HotelCard'
 
 const HomePage = () => {
 
@@ -14,10 +16,10 @@ const HomePage = () => {
 
   return (<>
     <div>
-      {/* Hero Section */}
+      {/* <HeroSection></HeroSection> */}
       <div className='hero-section'>
-        <h1>Your Perfect Stay Awaits</h1>
-        <SearchBar onSearch={handleSearch}/>
+        {/* <SearchBar onSearch={handleSearch}/> */}
+        <HotelCard></HotelCard>
       </div>
     </div>
       
