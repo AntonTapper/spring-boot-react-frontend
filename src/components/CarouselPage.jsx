@@ -9,12 +9,20 @@ import hotel3 from '../assets/Hotel3.jpg'
 
 
 
-const CarouselPage = () => {
+const CarouselPage = ({hotels}) => {
 
   return (
     <Carousel>
-      <div>
-        <Image
+      
+        {hotels.map((hotel) => {
+          <div key={hotel.id} className='hotel-card'>
+          <img src={`data:image/png;base64,${hotel.image}`} alt={hotel.name} className='hotel-image' />
+          <div className='hotel-details'>
+            {/* Additional content */}
+          </div>
+        </div>
+        })}
+        {/* <Image
           src={hotel1}
           alt="Picture of the author"
           width={50}
@@ -40,7 +48,7 @@ const CarouselPage = () => {
           height={50}
         />
         <p className="legend">Legend 3</p>
-       </div>
+       </div> */}
     </Carousel>
   )
 }

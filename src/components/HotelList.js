@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import HotelCard from './HotelCard/HotelCard';
 import api from '@/services/api';
+import { Carousel } from 'react-responsive-carousel';
 
 
 
@@ -31,11 +32,11 @@ const HotelsList = () => {
       }
 
     return (
-        <div>
+        <Carousel>
             {data.map((hotel) => (
                 <HotelCard key={hotel.id} hotel={hotel}/>
             ))}
-        </div>
+        </Carousel>
     )
 }
 
