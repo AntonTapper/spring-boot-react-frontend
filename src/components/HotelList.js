@@ -7,7 +7,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 
 
-const HotelsList = () => {
+const HotelList = () => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -40,4 +40,4 @@ const HotelsList = () => {
     )
 }
 
-export default HotelsList;
+export default HotelList;

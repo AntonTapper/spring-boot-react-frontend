@@ -13,6 +13,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
     return (
       <div className='hotel-card'>
         <img src={`data:image/png;base64,${hotel.image}`} alt={hotel.name} className='hotel-image' />
+        <p>{hotel.name}</p>
         <div className='hotel-details'>
         </div>
       </div>

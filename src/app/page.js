@@ -6,6 +6,6 @@ import CarouselPage from '@/components/CarouselPage'
 import HotelsList from '@/components/HotelList'
 
 export default function Home() {
-  return HotelsList()
+  return HomePage()
     
 }
