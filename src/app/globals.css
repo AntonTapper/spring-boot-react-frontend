@@ -17,5 +17,10 @@
 }
 
 body {
-  background-color: #87CEEB;
+  background-image: url('../assets/wallpaper.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }
