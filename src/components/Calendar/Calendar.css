@@ -1,0 +1,16 @@
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.day {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #4caf50;
+    color: white;
+}
