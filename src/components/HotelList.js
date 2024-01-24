@@ -26,7 +26,6 @@ const HotelList = () => {
       fetchData();
     }, []);
 
-    console.log(data.image)
     if (loading) {
         return <p>Loading...</p>;
       }

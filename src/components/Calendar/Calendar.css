@@ -1,16 +1,23 @@
 .calendar {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    max-width: 200px;
+    margin:auto;
 }
 
 .day {
+    margin: 5px;
+    padding: 5px;
     border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-    cursor: pointer;
 }
 
 .selected {
-    background-color: #4caf50;
-    color: white;
+    background-color: #3498db;
+    color: #fff;
+    font-weight: bold;
+}
+
+.range {
+    background-color: #3498db;
+    color: #fff;
 }

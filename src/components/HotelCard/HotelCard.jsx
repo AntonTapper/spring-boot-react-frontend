@@ -9,7 +9,6 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
     if (!hotel) {
       return <p>No hotel data available.</p>;
     }
-    console.log(hotel.image, "aaaa")
     return (
       <div className='hotel-card'>
         <img src={`data:image/png;base64,${hotel.image}`} alt={hotel.name} className='hotel-image' />
